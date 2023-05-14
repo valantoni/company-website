@@ -4,7 +4,7 @@ from streamlit_lottie import st_lottie
 from PIL import Image
 
 
-# ---- CONFIG ----
+#config
 st.set_page_config(page_title="Valerapp", page_icon="🤖", layout="wide")
 
 def load_lottieurl(url):
@@ -32,7 +32,7 @@ with st.container():
 
 
 
-# ---- ABOUT ----
+# sobre nosotros
 with st.container():
     st.write("---")
     left_column, right_column= st.columns((2))
@@ -56,7 +56,7 @@ with st.container():
     with right_column:
         st_lottie(load_lottieurl(lottie_file), height=400)
 
-# ---- SERVICES ----
+# servicios
 with st.container():
     st.write("---")
     st.header("Nuestros servicios")
@@ -106,7 +106,7 @@ with st.container():
         )
         st.write("[Ver servicios >](https://valerapp.com/services/)")
 
-# ---- CONTACT ----
+# contacto
 with st.container():
     st.write("---")
     st.header("Ponte en contacto con nosotros!")
